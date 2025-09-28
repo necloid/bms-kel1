@@ -1,0 +1,445 @@
+/* Palet Warna:
+   --dark-blue: #1435A9;
+   --medium-blue: #0066FF;
+   --orange: #FF8C38;
+   --light-gray: #E6E6E6;
+*/
+
+:root {
+    --dark-blue: #1435A9;
+    --medium-blue: #0066FF;
+    --orange: #FF8C38;
+    --light-gray: #E6E6E6;
+    --white: #FFFFFF;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: var(--white);
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    font-style: italic;
+}
+.accent-logo {
+    color: var(--orange);
+}
+.accent-text {
+    color: var(--orange); 
+    font-weight: bold;
+}
+
+.header {
+    background-color: var(--dark-blue);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    height: 60px;
+    position: sticky;
+    top: 0;
+    z-index: 100; 
+}
+
+.menu-toggle {
+    background: none;
+    border: none;
+    color: var(--white);
+    font-size: 30px;
+    cursor: pointer;
+    display: block; 
+}
+
+.main-nav {
+    display: none; 
+    position: absolute;
+    top: 100px; 
+    right: 20px;
+    width: 150px; /* Ukuran menu mobile */
+    background-color: var(--medium-blue); 
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    transition: all 0.3s ease-in-out;
+}
+
+.main-nav.is-open {
+    display: block; 
+}
+
+.main-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.main-nav ul li a {
+    display: block;
+    padding: 15px 20px;
+    text-decoration: none;
+    color: var(--white);
+    font-weight: bold;
+    text-align: center; 
+    transition: background-color 0.3s;
+}
+
+.main-nav ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.section {
+    padding: 40px 20px;
+    text-align: center;
+    min-height: 40vh; 
+}
+h1, h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+.content {
+    padding: 20px 0;
+}
+
+.about-us {
+    background-color: var(--dark-blue);
+    padding-top: 0; 
+    text-align: left;
+}
+.hero-image-placeholder {
+    width: 100%;
+    height: 200px;
+    background: url(gallery/toilet-cowo-lho-ya.jpg) center/cover no-repeat; 
+}
+.about-us .content {
+    background-color: var(--medium-blue);
+    padding: 30px 20px;
+    margin-top: -30px; 
+    text-align: justify;
+    border-radius: 10px;
+}
+.about-us h1 {
+    font-size: 32px;
+    font-style: italic;
+}
+.source {
+    font-size: 14px;
+    opacity: 0.7;
+    margin-top: 15px;
+}
+
+.cta-galeri {
+    background: url('placeholder-toilet.jpg') center/cover no-repeat; 
+    background-color: var(--dark-blue); 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--white);
+    min-height: 300px;
+}
+.content-box {
+    padding: 20px;
+    background: url(gallery/toilet-tampilan-depan.jpg) center/cover no-repeat;
+    border-radius: 10px;
+}
+
+.konten-terbaru {
+    background-color: var(--dark-blue);
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    padding: 50px 20px;
+}
+.konten-terbaru h2 {
+    text-align: center;
+    width: 100%;
+    margin-bottom: 15px;
+}
+.teks-konten {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.video-placeholder {
+    width: 100%;
+    max-width: 300px;
+    height: 300px;
+    background-color: var(--medium-blue); 
+    border-radius: 10px;
+}
+
+.testimonial {
+    background-color: var(--dark-blue);
+    padding: 50px 0; 
+    overflow: hidden; 
+}
+
+.testimonial-container {
+    width: 100%;
+    margin: 30px auto;
+    overflow: hidden; 
+    padding: 0 20px; 
+}
+
+.testimonial-wrapper {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+
+.testi-card {
+    flex-shrink: 0; 
+    width: 100%;    
+    background-color: var(--medium-blue); 
+    border-radius: 10px;
+    padding: 30px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    box-sizing: border-box; 
+}
+.photo-placeholder {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    background-image: url(gallery/ijul.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.photo-placeholder.placeholder-2 {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    background-image: url(gallery/nugi.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.photo-placeholder.placeholder-3 {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    background-image: url(gallery/ibra.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.photo-placeholder.placeholder-4 {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    background-image: url(gallery/fauzan.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.photo-placeholder.placeholder-5 {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    background-image: url(gallery/nanda.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.photo-placeholder.placeholder-6 {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    background-image: url(gallery/fay.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.quote {
+    font-style: italic;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+
+.slider-controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px; 
+    margin-top: 30px;
+}
+
+.slider-dots {
+    display: flex;
+    justify-content: center;
+}
+.slider-dots .dot {
+    height: 10px;
+    width: 10px;
+    margin: 0 5px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.slider-dots .dot.active {
+    background-color: var(--orange);
+}
+
+.nav-arrow {
+    display: none;
+    background: none;
+    border: none;
+    color: var(--white);
+    font-size: 30px;
+    cursor: pointer;
+    padding: 0 10px;
+    z-index: 10;
+}
+
+.footer {
+    background-color: var(--dark-blue); 
+    color: var(--white); 
+    text-align: center;
+    padding: 15px 0;
+    font-size: 14px;
+    border-top: 1px solid var(--medium-blue); 
+}
+
+.btn {
+    background-color: var(--orange);
+    color: var(--white);
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+.btn:hover {
+    background-color: #e0742f; 
+}
+
+
+@media (min-width: 768px) {
+    .header {
+        padding: 20px 50px; 
+    }
+    
+    .menu-toggle {
+        display: none;
+    }
+
+    .main-nav {
+        display: block; 
+        position: static; 
+        width: auto;
+        background: none; 
+        box-shadow: none;
+    }
+
+    .main-nav ul {
+        display: flex; 
+        gap: 30px;
+    }
+
+    .main-nav ul li a {
+        padding: 0;
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 1.2;
+        text-align: center;
+        color: var(--white); 
+    }
+    
+    .main-nav ul li a:hover {
+        background: none;
+        color: var(--orange); 
+    }
+    
+    .about-us {
+        display: flex;
+        align-items: flex-start;
+        padding-top: 50px;
+        padding-left: 50px;
+        padding-right: 0;
+    }
+    .hero-image-placeholder {
+        order: 2;
+        width: 60%;
+        height: 400px;
+        margin-top: -50px;
+    }
+    .about-us .content {
+        order: 1;
+        width: 40%;
+        padding: 0;
+        padding-right: 30px;
+        margin: 0;
+        background: none;
+    }
+    .about-us h1 {
+        margin-top: 0;
+    }
+
+    .cta-galeri .content-box {
+        padding: 80px;
+    }
+    
+    .konten-terbaru {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .konten-terbaru h2 {
+        text-align: left;
+    }
+    .teks-konten {
+        width: 40%;
+        text-align: left;
+        margin-bottom: 0;
+    }
+    .video-placeholder {
+        width: 40%;
+        max-width: none;
+        height: 350px;
+    }
+    .testimonial-container {
+        max-width: 500px;
+    }
+    .testi-card {
+        padding: 40px;
+    }
+    .nav-arrow {
+        display: block;
+    }
+    .slider-controls {
+        position: relative;
+        justify-content: center; 
+    }
+    .prev-arrow {
+        position: absolute;
+        left: 20%; 
+    }
+    .next-arrow {
+        position: absolute;
+        right: 20%; 
+    }
+}
+}
