@@ -166,7 +166,7 @@ h1, h2 {
     width: 100%;
     max-width: 300px;
     height: 300px;
-    background-color: var(--medium-blue); 
+    background: url(gallery/preview-konten.jpg) center/cover no-repeat;
     border-radius: 10px;
 }
 
@@ -186,7 +186,7 @@ h1, h2 {
 .testimonial-wrapper {
     display: flex;
     transition: transform 0.5s ease-in-out;
-
+}
 .testi-card {
     flex-shrink: 0; 
     width: 100%;    
@@ -260,6 +260,17 @@ h1, h2 {
     border-radius: 50%;
     margin-bottom: 15px;
     background-image: url(gallery/fay.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.photo-placeholder.placeholder-7 {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    background-image: url(gallery/acit.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -441,5 +452,4 @@ h1, h2 {
         position: absolute;
         right: 20%; 
     }
-}
 }
